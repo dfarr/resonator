@@ -1,0 +1,9 @@
+[project]
+name = "resonate-is-also-a-task-framework"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "resonate-sdk>=0.4.8",
+]

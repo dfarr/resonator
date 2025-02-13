@@ -4,7 +4,7 @@ Resonator is a distributed calculator that can calculate basic
 arithmetic expressions that contain numbers and the following
 symbols:
 ```
-( ) + - * /
+( ) + - *
 ```
 
 Resonator splits an expression into tasks (sub expressions) and
@@ -15,7 +15,6 @@ Give it a try by typing an expression such as:
 (1 + 2)
 (1 + 2) * 3
 (1 + 2) * (3 - 4)
-(1 + 2) * (3 - 4) / 5
 ```
 
 Resonator is built with [Resonate](https://github.com/resonatehq/resonate).
@@ -38,6 +37,6 @@ GRP=exp PID=rhs uv run resonator
 # start ops task group
 GRP=ops uv run resonator
 
-# start cli
+# start command prompt
 uv run resonator
 ```

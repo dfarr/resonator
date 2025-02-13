@@ -32,12 +32,12 @@ resonate serve
 uv sync
 
 # start exp task group
-GRP=exp PID=lhs uv run resonator/resonator.py
-GRP=exp PID=rhs uv run resonator/resonator.py
+GRP=exp PID=lhs uv run resonator
+GRP=exp PID=rhs uv run resonator
 
 # start ops task group
-GRP=ops uv run resonator/resonator.py
+GRP=ops uv run resonator
 
 # start cli
-uv run resonator/resonator.py
+uv run resonator
 ```

@@ -202,17 +202,6 @@ wheels = [
 ]
 
 [[package]]
-name = "resonate-is-also-a-task-framework"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "resonate-sdk" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "resonate-sdk", specifier = ">=0.4.8" }]
-
-[[package]]
 name = "resonate-sdk"
 version = "0.4.9"
 source = { registry = "https://pypi.org/simple" }
@@ -227,6 +216,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/bc/63/d92a3d7b5d2078923
 wheels = [
     { url = "https://files.pythonhosted.org/packages/39/a6/bd3688dfb9977d044e1844e3215265d7162d950e95d587a300ba07b2ec3b/resonate_sdk-0.4.9-py3-none-any.whl", hash = "sha256:eeafba3c6fdea89fb75118a525d6828dc009066f58cea29dd466c4bc1ec3cc55", size = 42415 },
 ]
+
+[[package]]
+name = "resonator"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "resonate-sdk" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "resonate-sdk", specifier = ">=0.4.8" }]
 
 [[package]]
 name = "typing-extensions"

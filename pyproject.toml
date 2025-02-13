@@ -1,9 +1,14 @@
+tool.uv.package = true
+
 [project]
-name = "resonate-is-also-a-task-framework"
+name = "resonator"
 version = "0.1.0"
-description = "Add your description here"
+description = "A distributed calculator built with Resonate."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "resonate-sdk>=0.4.8",
 ]
+
+[project.scripts]
+resonator = "resonator.resonator:run"
